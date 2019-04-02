@@ -1,5 +1,5 @@
 {
-  //import { from } from "rxjs";
+  const { from } = rxjs;
   console.log("================Excercise 1================");
   //ES6
   String.prototype.filterWords = function(bannedWords) {
@@ -26,4 +26,7 @@
     console.log("Async: " + result);
   }
   filterWordsAsync();
+
+  //Observable
+  from(promiseFilter()).subscribe(e => console.log("Observable: " + e));
 }
