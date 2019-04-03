@@ -1,0 +1,14 @@
+1. SetImmeduate should executed after I/O phase.
+
+2. process.nextTrick is executed in curretn iteration of the event loop. Actually nextTrick is not part of event loop. nextTick's priority is higher than event loop queues. process.nextTrick should be execute before setTomeout and setImmediate.
+
+3.  1. fs- module that works with file system.
+    2. http- handles and send http requests.
+    3. https- handles secure http requests
+    4. path- includes methods to deal with file paths.
+    5. querystring- includes methods to deal with query string.
+    6. assert- provides a way of testing expressions.
+    7. os- provides operating system-related utility methods. 
+    8. event- handle events.
+    9. net- used to create socket connection(servers and clients).
+    10. Stream- provides a base API that makes it easy to build objects that implement the stream interface.
