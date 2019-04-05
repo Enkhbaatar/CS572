@@ -29,9 +29,9 @@
         Link:
           `<https://randomuser.me/api/?page=1&results=10>; rel="first",` +
           `<https://randomuser.me/api/?page=${response.data.info.page +
-            1}&results=${response.data.info.seed}>; rel="next",` +
+            1}&results=10&seed=${response.data.info.seed}>; rel="next",` +
           `<https://randomuser.me/api/?page=${response.data.info.page -
-            1}&results=${response.data.info.seed}>; rel="prev",`
+            1}&results=10&seed=${response.data.info.seed}>; rel="prev",`
       });
       console.error(response.data);
       res.json(response.data);
