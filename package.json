@@ -1,0 +1,22 @@
+{
+  "name": "mwa",
+  "version": "1.0.0",
+  "description": "mwa cs572",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enkhbaatar/CS572.git"
+  },
+  "author": "Enkhbaatar Tumenbayar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enkhbaatar/CS572/issues"
+  },
+  "homepage": "https://github.com/Enkhbaatar/CS572#readme",
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  }
+}
