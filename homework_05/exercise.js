@@ -33,7 +33,6 @@
           `<https://randomuser.me/api/?page=${response.data.info.page -
             1}&results=10&seed=${response.data.info.seed}>; rel="prev",`
       });
-      console.error(response.data);
       res.json(response.data);
     } catch (error) {
       console.error(error);
