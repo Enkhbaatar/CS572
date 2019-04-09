@@ -1,0 +1,25 @@
+GET http://localhost:5000/api/lectures
+
+###
+
+GET http://localhost:5000/api/lectures?q=lecture 2
+
+###
+
+POST http://localhost:5000/api/lectures HTTP/1.1
+Content-Type: application/json
+{"_id":1,"course": "MAA", "lecture": "lecture 1"}
+
+###
+
+POST http://localhost:5000/api/lectures/search/lecture 2
+
+###
+
+PUT http://localhost:5000/api/lectures HTTP/1.1
+Content-Type: application/json
+{"_id":1,"course": "MAA", "lecture": "lecture 1"}
+
+###
+
+DELETE http://localhost:5000/api/lectures/101

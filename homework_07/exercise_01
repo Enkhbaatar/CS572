@@ -1,0 +1,19 @@
+{
+    _id: objectId(),
+    isbn: "0764526413",
+    name: "Journey to the Center of the Earth",
+    authors: ["Jules Verne"],
+    tag:["Journey","Adventure", "Novel"],
+    borrowed:[
+        {
+            name: "Enkhbaatar Tumenbayar",
+            id: 986708,
+            date: 16/04/2019
+        },
+        {
+            name: "Elise",
+            id: 986702,
+            date: 20/04/2019
+        }
+    ]
+}
