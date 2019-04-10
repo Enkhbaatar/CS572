@@ -52,9 +52,10 @@ router.post("/search/:q", (request, response) => {
 });
 
 router.put("/", (request, response) => {
+  console.log(require);
   if (request.dbcollect) {
     request.dbcollect
-      .save(request.body)
+      .update({ '_id': require.body['_id'] }, request.body)
       .then(data => {
         response.status(200).UpdateOne("Update success");
       })
@@ -71,7 +72,7 @@ router.delete("/:id", (request, response) => {
   if (request.dbcollect) {
     console.log(request.params.id);
     request.dbcollect
-      .deleteOne({ '_id': request.params.id })
+      .remove({ '_id': request.params.id })
       .then(data => {
         response.status(200).send("Lecture is deleted");
       })
