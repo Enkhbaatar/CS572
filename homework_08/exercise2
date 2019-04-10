@@ -18,4 +18,4 @@
     ]
 }
 
-db.library.createIndex()
+db.library.createIndex([{"isbn": 1},{"name": 1}])
