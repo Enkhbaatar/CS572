@@ -23,4 +23,5 @@
   }
 
   checkSystem();
+  console.log("End");
 }
