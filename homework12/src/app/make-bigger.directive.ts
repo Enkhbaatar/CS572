@@ -4,7 +4,7 @@ import { Directive, Input, ElementRef, Renderer2, HostListener, HostBinding, } f
   selector: '[appMakeBigger]'
 })
 export class MakeBiggerDirective {
-  @Input() fontSize: string = '10px'
+  @Input() fontSize: string = '10'
   constructor(private element: ElementRef, private renderer: Renderer2) {
   }
 
