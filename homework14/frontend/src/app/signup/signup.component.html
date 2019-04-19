@@ -1,0 +1,34 @@
+<h2>Sign Up</h2>
+<p>Please fill in this form to create an account!</p>
+<hr>
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  <div formGroupName="user">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="firstName" formControlName="first" placeholder="Fisrt Name" />
+        </div>
+
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="lastName" formControlName="last" placeholder="Last Name" />
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="email" formControlName="email" placeholder="Email" />
+    </div>
+  </div>
+
+  <input type="password" class="form-group form-control" id="pass" formControlName="password" placeholder="Password" />
+  <input type="password" class="form-group form-control" id="confirmPass" formControlName="confirmPass"
+    placeholder="Confirm Password" />
+
+  <div class="form-group form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="term" required>
+    <label class="form-check-label" for="defaultCheck">
+      Default checkbox
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">Submit</button>
+</form>

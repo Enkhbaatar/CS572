@@ -1,0 +1,11 @@
+<h2>Pleasen Login</h2>
+{{message}}
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <input type="text" class="form-group form-control" id="username" formControlName="username"
+      placeholder="User Name" />
+    <input type="password" class="form-group form-control" id="password" formControlName="password"
+      placeholder="Password" />
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+</form>
